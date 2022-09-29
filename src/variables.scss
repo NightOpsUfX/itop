@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --main-color: #1A4F8B;
+  --secondary-color: #F14436;
+  --input-borders-color: #C3C3C3;
+  --input-placeholder-color: #767676;
+  --white-color: #fff;
+  --dark-text-color: #000000;
+  --light-text-color: #B0B0B0;
+  --normal-font: 400 16px Roboto;
+  --title-font: 700 36px Roboto;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --normal-font: 400 14px Roboto;
+    --title-font: 700 32px Roboto;
+  }
+}

@@ -1,0 +1,89 @@
+.converter__main {
+  //display: flex;
+  //justify-content: space-between;
+  //flex-wrap: wrap;
+  margin: 50px 0;
+  padding: 25px;
+  .converter__main-wrapper {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px 25px;
+    border-radius: 6px;
+    border: 1px solid var(--input-borders-color);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    position: relative;
+  }
+  .converter__error-message {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    color: var(--secondary-color);
+  }
+  .converter__change-direction {
+    width: 50px;
+    img {
+      width: 100%;
+    }
+  }
+  .converter__change-direction.left {
+    img {
+      transform: rotate(180deg);
+    }
+  }
+  .converter__inputs-part-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .converter__inputs-part {
+    width: calc(50% - 35px);
+  }
+  .converter__currency-select {
+    height: 30px;
+    width: 100%;
+    background: var(--white-color);
+    border: 1px solid var(--input-borders-color);
+    border-radius: 5px;
+    color: var(--main-color);
+    font: var(--normal-font);
+    margin-bottom: 10px;
+    outline: none;
+  }
+  .converter__input {
+    width: 100%;
+    height: 50px;
+    background: var(--white-color);
+    border: 1px solid var(--input-borders-color);
+    border-radius: 5px;
+    padding: 17px 17px 17px 45px;
+    color: var(--main-color);
+    font: var(--normal-font);
+    outline: none;
+  }
+  .converter__input::-webkit-input-placeholder {
+    font: var(--normal-font);
+    color: var(--input-placeholder-color);
+  }
+  .converter__input::-moz-placeholder {
+    font: var(--normal-font);
+    color: var(--input-placeholder-color);
+  }
+  .converter__button {
+    width: 100%;
+    border-radius: 8px;
+    background: var(--main-color);
+    color: var(--white-color);
+    font: var(--normal-font);
+    text-align: center;
+    height: 50px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .converter__button:hover {
+    background: var(--secondary-color);
+  }
+
+}
